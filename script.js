@@ -26,7 +26,7 @@ console.log(obj1.title,obj1.studio,obj1.rating);*/
 
 //c.
 
-/*class Movie
+class Movie
 {
     constructor(title,studio,rating="PG")
     {
@@ -34,16 +34,20 @@ console.log(obj1.title,obj1.studio,obj1.rating);*/
     this.studio=studio;
     this.rating=rating;
     }
-      static getpG(movies)
+      static getPG(movies)
   {
         return movies.filter(Movie=>Movie.rating==="PG")
   }}
-const movies=[new Movie("casino royale","eon productions","9"),
-       new Movie("vikram","eon production","9"),
-       new Movie("leo","rayalo","6"),
+ const object =new Movie("leo","7 star","7.2");
+ const movies=
+       [new Movie("casino royale","eon productions","9"),
+       new Movie("vikram","eon production"),
+       new Movie("leo","rayalo"),
        new Movie("I","eon","7"),
-       new Movie("casino","eon")];          
-          console.log(movies.title,movies.studio,movies.rating);*/
+       new Movie("casino","eon")];  
+       const pgMovies=Movie.getPG(movies) ;
+       console.log(pgMovies) ;     
+    
           
 
 //d.
@@ -125,7 +129,7 @@ console.log(obj1.age,obj1.contact,obj1.gender);
 */
 
 //TASK 4 Uber price
-class Uberprice
+/*class Uberprice
 {
     constructor (kilometer,price)
     {
@@ -143,7 +147,7 @@ class Uberprice
     
     }
     const obj=new Uberprice("100","5");
-    console.log(obj.kilometer*obj.price);
+    console.log(obj.kilometer*obj.price);*/
     
 
 
